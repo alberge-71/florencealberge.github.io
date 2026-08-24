@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Florence Alberge</title>
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      margin-top: 30px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .news-item {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <img src="photo.jpg" alt="photo">
+    <div>
+      <h1> Florence ALBERGE</h1>
+      <div class="subtitle">Professor — Univ. Paris-Saclay (IUT d'orsay / Lab. SATIE) </div>
+      <div>florence.alberge@universite-paris-saclay.fr | <a href="https://scholar.google.com/citations?user=8CcRfB8AAAAJ&hl=fr" target="_blank">Google Scholar</a></div>
+      <p>
+        <strong>About me - </strong>I am a Professor at Université Paris-Saclay, conducting my research within the SATIE laboratory, where I co-lead the SICOIA group (Multi-sensor Signals, Computational Imaging, and Uncertainties in Learning) with Emanuel Aldea. My work centers on Trustworthy AI and the development of robust and calibrated models capable of leveraging imperfect data from complex physical systems, particularly applied to cultural heritage.
+
+Alongside my research, I am a faculty member at the IUT d’Orsay. I received my PhD in 1999 and my HDR in 2015.
+      </p>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a onclick="show('home')">Home</a>
+    <a onclick="show('publications')">Publications</a>
+    <a onclick="show('teaching')">Teaching</a>
+    <a onclick="show('service')">Responsabilités (in French)</a>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+
+    <h2>Research Interests</h2>
+
+    <strong>Current Research Topics</strong>
+<ul>
+  <li>
+    <strong>Trustworthy Artificial Intelligence</strong><br>
+    Reliable and robust machine learning for safety-critical applications.
+  </li>
+
+  <li>
+    <strong>Out-of-Distribution &amp; Anomaly Detection</strong><br>
+    Detection of distribution shifts, novel data, and abnormal observations in AI systems.
+  </li>
+
+  <li>
+    <strong>Representation Learning &amp; Generative Models</strong><br>
+    Structured latent representations using Variational Autoencoders and other generative approaches.
+  </li>
+
+  <li>
+    <strong>Uncertainty Quantification</strong><br>
+    Confidence estimation and prediction reliability for classification and regression models.
+  </li>
+
+  <li>
+    <strong>Information Geometry for Machine Learning</strong><br>
+    Geometric and statistical methods for robust learning and distribution analysis.
+  </li>
+
+  <li>
+    <strong>Machine Learning for Signal Processing &amp; Communications</strong><br>
+    AI-driven methods for signal processing, wireless communications, and intelligent sensing.
+  </li>
+</ul>
+
+    <h2>News</h2>
+<div class="news-item">August 2026 — M. Hadj-Ali, F. Alberge, From Hierarchical Backoff to Reliable Open-World Inference, accepted at BMVC 2026.</div>
+ <div class="news-item">July 2026 — M. Hadj-Ali, F. Alberge, Risk-Controlled Semantic Value for Multi-Label Hierarchical Selective Classification, submitted to WACV 2027.</div>
+
+    <div class="news-item">May 2026 — M. Hadj-Ali, F. Alberge, Hierarchical Prompt-Aware Zero-Shot Out-of-Distribution Detection, accepted at ICIP 2026.</div>
+   
+
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+ 
+
+<h2>Under review</h2>
+<p> 
+M. Hadj-Ali, F. Alberge. "Risk-Controlled Semantic Value for Multi-Label Hierarchical Selective Classification". Submitted to WACV 2027.
+<p> 
+
+
+<h2>Published</h2>
+<p>   
+
+<h3>2026</h3>
+<p>   
+M. Hadj-Ali, F. Alberge . "From Hierarchical Backoff to Reliable Open-World Inference". Proceedings of the 37th British Machine Vision Conference (BMVC), Lancaster, UK, november 2026.
+</p>
+
+<p>   
+M. Hadj-Ali, F. Alberge . "Hierarchical Prompt-Aware Zero-Shot Out-Of-Distribution Detection". Proceedings of the 33rd International Conference on Image Processing (ICIP), Tampere, Finland, September 2026.
+</p>
+
+<h3>2025</h3>
+<p>   
+M. Ossonce, P. Duhamel, F. Alberge . <a href="https://hal.science/hal-05194837/document""target="_blank">Détection des Données Hors Distribution : Une Approche Basée sur un Auto-Encodeur Variationnel Structuré"</a>. Actes du GRETSI, Strasbourg, France, Août 2025.
+</p>
+
+<h3>2024</h3>
+<p>
+E. Dadalto Câmara Gomes, F. Alberge, P. Duhamel, P. Piantanida, <a href="https://arxiv.org/abs/2406.16045"target="_blank">"Combine and Conquer: A Meta-Analysis on Data Shift and Out-of-Distribution Detection"</a>, Transactions on Machine Learning Research, 2024. 
+</p>
+
+<p>
+A. Altieri, M. Romanelli, G. Pichler, F. Alberge, P. Piantanida, <a href="https://hal.science/hal-04575936""target="_blank">"Beyond the Norms: Detecting Prediction Errors in Regression Models"</a>, ICML Proceedings, 2024 (accepted as a spotlight - spotlight acceptance rate : 3.5%).
+</p>
+
+<p>
+M. Ossonce, P. Duhamel, F. Alberge, <a href="https://ieeexplore.ieee.org/document/10715222"""target="_blank">Adequate structuring of the latent space for easy classification and out-of-distribution detection"</a>, Proceedings of the 32nd European Signal Processing Conference (EUSIPCO), Lyon, France, 2024, pp. 1776–1780.
+</p>
+
+<h3>2022</h3>
+<p>
+E. Dadalto, F. Alberge , P. Duhamel, P. Piantanida. <a href="https://arxiv.org/abs/2203.07798""target="_blank">"Igeood: An Information Geometry Approach to Out-of-Distribution Detection"</a>. 10th International Conference on Learning Representations
+(ICLR), Virtual-only Conference, Avril 2022
+</p>
+
+<h3>2021</h3>
+<p>
+E. Dadalto Câmara Gomes, F. Alberge, P. Duhamel, P. Piantanida, "Igeood: An Information Geometry Approach to Out-of-Distribution Detection", NeurIPS DistShift Workshop, 2021.
+</p>
+
+<h3>2019</h3>
+<p>
+F. Alberge, "Deep Learning Constellation Design for the AWGN Channel with Additive Radar Interference", IEEE Transactions on Communications, vol. 67, no. 2, 2019, pp. 1413–1423.
+</p>
+
+<p>
+F. Alberge, C. Feutry, P. Duhamel, P. Piantanida, <a href="https://ieeexplore.ieee.org/document/8798827""target="_blank">Detecting covariate shift with Black Box predictors"</a>, International Conference on Telecommunications (ICT), Hanoi, Vietnam, 2019.
+</p>
+
+<p>
+C. Feutry, P. Piantanida, F. Alberge, P. Duhamel, "A Simple Statistical Method to Detect Covariate Shift", GRETSI, Lille, France, 2019.
+</p>
+
+<p>
+F. Alberge, "Apprentissage par réseau de neurones pour communiquer en présence d'une interférence radar", GRETSI, Lille, France, 2019.
+</p>
+
+<h3>2018</h3>
+<p>
+F. Alberge, "Constellation design with deep learning for downlink non-orthogonal multiple access", IEEE PIMRC, Bologna, Italy, 2018.
+</p>
+
+<h3>2016</h3>
+<p>
+F. Alberge, "Min-sum decoding of irregular LDPC codes with adaptive scaling based on mutual information", International Symposium on Turbo Codes, Brest, France, 2016.
+</p>
+
+<p>
+Z. Mheich, M. Le Treust, F. Alberge , P. Duhamel. "Rate adaptation for incremental redundancy secure HARQ", IEEE Transactions on Communications, vol 64, no 2, p.765-777, 2016.
+</p>
+
+<p>
+M. El Soussi, T.X. Vu, H.N. Nguyen, P. Duhamel, F. Alberge , L. Vandendorpe, "Semi-orthogonal MARC with half duplex relaying: A Backward Compatible Cooperative Network with Interference Channels". IEEE Intl Workshop on Signal Processing Advances in Wireless Communications (SPAWC’16), Edinburgh, UK, July 2016.
+</p>
+
+<h3>2015</h3>
+<p>
+F. Alberge , "On some Properties of the Mutual Information between Extrinsics with Application to Iterative Decoding" - IEEE Transactions on Communications, vol 63, no 5, p. 1541-1553, 2015.
+</p>
+
+<p>
+Z. Mheich, F. Alberge , P. Duhamel, "Achievable Secrecy Rates for the Broadcast Channel with Confidential Message and Finite Constellation Inputs" - IEEE Transactions on Communications, vol 63,
+no 1, p. 195-205, 2015.
+</p>
+
+<p>
+F. Alberge, "Méthodes de codage et d'estimation adaptative appliquées aux communications sans fil", HDR, Université Paris-Sud, 2015.
+</p>
+
+<p>
+F. Alberge, "Propriétés et applications de l'information mutuelle entre extrinsèques", GRETSI, Lyon, France, 2015.
+</p>
+
+<h3>2014</h3>
+<p>
+Z. Mheich, F. Alberge, P. Duhamel, "The impact of finite-alphabet input on the secrecy-achievable rates for broadcast channel with confidential message", IEEE ICASSP, Florence, Italy, 2014, pp. 1–5.
+</p>
+
+<p>
+Z. Mheich, M. Le Treust, F. Alberge , P. Duhamel, L. Szczecinski. "Rate-adaptive secure HARQ protocols for block-fading channels". EUropean SIgnal Processing COnference (EUSIPCO), Lisbon, Portugal, Sept. 2014
+</p>
+
+<h3>2013</h3>
+<p>
+Z. Mheich, F. Alberge, P. Duhamel, "Achievable Rates Optimization For Broadcast Channels Using Finite Size Constellations Under Transmission Constraints" - EURASIP Journal on Wireless Communications and Networking, p.1-15, 2013.
+</p>
+
+<p>
+F. Alberge , Z. Naja, P. Duhamel, "Power extrinsic propagation for turbo-codes" - IEEE Transactions on Signal Processing, vol. 61, no 5, p.1107-1111, 2013.
+</p>
+
+<p>
+Z. Mheich, F. Alberge , P. Duhamel. "On the Efficiency of Transmission Strategies for Broadcast Channels Using Finite Size Constellations". EUropean SIgnal Processing COnference (EUSIPCO), Marrakech, Morocco, Sept. 2013.
+</p>
+
+<p>
+P. Gérold, P. Duhamel, F. Alberge, "Allocation de puissance en vue d'un routage efficace dans les réseaux sans fils", GRETSI, Brest, France, 2013.
+</p>
+
+<h3>2012</h3>
+<p>
+F. Alberge . "Pairwise joint probability propagation in BICM-ID". Proceedings of the 7th International Symposium on Turbo Codes and Iterative Information Processing, Goteborg, Sweden, August 2012.
+</p>
+
+<p>
+P. Gérold, T.-T.-N. Pham, F. Alberge, P. Duhamel, "Multi-Hop, Multi-Route Power Minimisation in Ad-Hoc Network", IEEE ICASSP, Kyoto, Japan, 2012.
+</p>
+
+<h3>2011</h3>
+<p>
+F. Alberge, "A game-theoretic interpretation of iterative decoding". European Signal Processing Conference (EUSIPCO). Barcelona, Spain, August 2011. 
+</p>
+
+<p>
+F. Alberge, Z. Naja and P. Duhamel. "From Maximum Likelihood to iterative decoding". Proc. of the IEEE International Conference on Audio, Speech, and Signal Processing (ICASSP). Prague, Czech Republic, May 2011. 
+</p>
+
+<h3>2010</h3>
+<p>
+Z. Xu, Y. Wang, F. Alberge, P. Duhamel, "A turbo iteration algorithm in 16QAM hierarchical modulation", IEEE WCNIS, Beijing, China, 2010, pp. 9–13.
+</p>
+
+<h3>2009</h3>
+<p>
+F. Alberge, Z. Naja, P. Duhamel, "New criteria for iterative decoding", IEEE ICASSP, Taipei, Taiwan, 2009, pp. 2493–2496.
+</p>
+
+<p>
+Z. Naja, F. Alberge, P. Duhamel, "Geometrical interpretation and improvements of the Blahut-Arimoto's algorithm", IEEE ICASSP, Taipei, Taiwan, 2009, pp. 2505–2508.
+</p>
+
+<p>
+Z. Naja, F. Alberge, P. Duhamel, "Méthode du point proximal: principe et applications aux algorithmes itératifs", GRETSI, Dijon, France, 2009.
+</p>
+
+<h3>2008</h3>
+<p>
+F. Abdelkefi, P. Duhamel, F. Alberge, J. Ayadi, "On the use of cascade structure to correct impulsive noise in multicarrier systems", IEEE Transactions on Communications, vol. 56, no. 11, 2008, pp. 1844–1858.
+</p>
+
+<p>
+F. Alberge. "Iterative decoding as Dykstra’s algorithm with alternate I-projection and reverse I-projection" In EUropean SIgnal Processing COnference (EUSIPCO) Lausanne, Switzerland, August 2008.
+</p>
+
+<h3>2007</h3>
+<p>
+F. Abdelkefi, P. Duhamel, F. Alberge, "A Necessary Condition on the Location of Pilot Tones for Maximizing the Correction Capacity in OFDM Systems", IEEE Transactions on Communications, vol. 55, no. 2, 2007, pp. 356–366.
+</p>
+
+<p>
+F. Alberge . "Accelerated linear EM-MAP algorithm for OFDM channel estimation". In Proc. of International Conference on Acoustic Speech and Signal Processing. Honolulu, USA, April 2007. 
+</p>
+
+<h3>2006</h3>
+<p>
+F. Alberge, M. Nikolova, P. Duhamel, "Blind identification/equalization using deterministic maximum likelihood and a partial prior on the input", IEEE Transactions on Signal Processing, vol. 54, no. 2, 2006, pp. 724–737.
+</p>
+
+<p>
+J-M. Mamfoumbi OclooD and F. Alberge. "OFDM channel estimation by a linear EM-MAP algorithm". In Proc. of International Conference on Acoustic Speech and Signal Processing. Toulouse, France, May 2006.
+</p>
+
+<h3>2005</h3>
+<p>
+M. Mamfoumbi Ocloo, F. Alberge and P. Duhamel. "Semi-Blind channel estimation for OFDM systems via an EM-MAP algorithm". In Proc. of Signal Processing Advances in Wireless Communication (SPAWC). New York, USA, June 2005
+</p>
+
+<h3>2004</h3>
+<p>
+S. Touati, J-M. Mamfoumbi OclooD, F. Alberge and P. Duhamel. "Semi-Blind channel estimation for OFDM systems via an EM-Block algorithm". In Proc. of EUropean SIgnal Processing COnference (EUSIPCO) Vienna, Austria, Sept. 2004.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, F. Alberge and J. Ayadi. "Using Pilot Tones Distribution For Maximal Correction Capacity Of Impulse Noise in OFDM Systems". In Proc. of IEEE Vehicular Technology Conference Fall Los Angeles, USA, Sept. 2004.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, F. Alberge and J. Ayadi. "Correction Capacity of Impulse Noise in Multicarrier Systems". In Proc. of 7th International Symposium on Wireless Personal Multimedia Communications. Abano Terme, Italy, Sept. 2004.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, F. Alberge and J. Ayadi. "An Efficient Algorithm for the PAPR Level Reduction in OFDM Based Systems". In Proc. of IST Mobile & Wireless Communications. Lyon, France, Sept. 2004.
+</p>
+
+<p> 
+R. Gallego, F. Alberge , P. Duhamel and A. Rouxel. "Semi-blind equalization for GMSK-based mobile communication". In Proc. of International Conference on Acoustic Speech and Signal Processing (ICASSP). Montreal, Quebec, May 2004.
+</p>
+
+<h3>2003</h3>
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "A necessary condition on the location of pilot tones for impulse noise cancellation in OFDM system and its applications in Hiperlan 2". In Proc of Globecom. San Francisco, USA, Dec. 2003. 
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "Improvement of the complex Reed Solomon decoding with application to impulse noise cancellation in Hiperlan 2". In Proc. of ISSPA. Paris, France, Aug. 2003.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "Impulse noise correction in Hiperlan 2: improvement of the decoding algorithm and application to PAPR reduction". In Proc. of International Conference on Communication (ICC). Anchorage, Alaska, May 2003. 
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "Tests en cascade pour la correction des erreurs impulsives et la réduction du PAPR dans le contexte d’Hiperlan 2". Actes du GRETSI. Paris, France, Sept. 2003
+</p>
+
+<h3>2002</h3>
+<p>
+F. Alberge, P. Duhamel, M. Nikolova, "Adaptive solution for blind identification/equalization using deterministic maximum likelihood", IEEE Transactions on Signal Processing, vol. 50, no. 4, 2002, pp. 923–936.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "On the location of pilot tones for impulse noise cancellation in multicarrier transmission". In Proc. of International Conference on Communication (ICC). New York, USA, May 2002. 
+</p>
+
+<h3>2001</h3>
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "On the use of pilot tones for impulse noise cancellation in Hiperlan 2". In Proc. of ISSPA. Kuala Lumpur, Malaysia, Aug. 2001.
+</p>
+
+<p>
+F. Abdelkefi, P. Duhamel, and F. Alberge. "Codage correcteur d’erreur dans le corps des complexes et systèmes multiltiporteuses". Actes du GRETSI. Toulouse, France, Sept. 2001
+</p>
+
+<h3>2000</h3>
+<p>
+F. Alberge , P. Duhamel and M. Nikolova. "Low cost adaptive algorithm for blind channel identification and symbol estimation". In Proc of EUropean SIgnal Processing COnference (EUSIPCO). Tampere, Finland, Sept. 2000.
+</p>
+
+<p>
+F. Alberge, M. Nikolova and P. Duhamel. "Adaptive deterministic maximum likelihood using a quasi-discrete prior". In Proc of International Conference on Acoustic Speech and Signal Processing (ICASSP). Istanbul, Turkey, May 2000.
+</p>
+
+<h3>1999</h3>
+<p>
+F. Alberge, P. Duhamel and M. Nikolova. "Blind identification/equalization using deterministic maximum likelihood and a partial information on the input". In Proc of Signal Processing Advances in Wireless Communications (SPAWC), Annapolis, USA, May 1999.
+</p>
+
+<h3>1998</h3>
+<p>
+J.-P. Delmas, F. Alberge, "Asymptotic Performance Analysis of Subspace Adaptive Algorithms Introduced in the Neural Network Literature", IEEE Transactions on Signal Processing, 1998.
+</p>
+
+<p>
+F. Alberge, P. Duhamel and Y. Grenier. "Comparison of adaptive algorithms for stereophonic acoustic echo cancellation". In Proc of the 8th IEEE Digital Signal Processing Workshop. Bryce Canyon, USA, Aug. 1998.
+</p>
+
+<p>
+F. Alberge, P. Duhamel and Y. Grenier. "A combined FDAF/WSAF algorithm for stereophonic acoustic stereo cancellation". In Proc. of International Conference on Acoustic Speech and Signal Processing (ICASSP). Seattle, USA, 1998.
+</p>
+
+<h3>1997</h3>
+<p>
+J-P. Delmas and F. Alberge. "Lois asymptotiques d’estimateurs adaptatifs de sous-espaces introduits dans la littérature neuronale". Actes du GRETSI. Grenoble, France, Sept., 1997.
+</p>
+
+  </section>
+
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <h2>Teaching (IUT d'Orsay - Univ. Paris-Saclay)</h2>
+    <ul>
+      <li>Image Processing — Lectures, tutorials, and practical sessions (BUT3)</li> 
+	  <li>Signal Processing — Lectures, tutorials, and practical sessions (BUT2)</li> 
+	  <li>Mathematics — Tutorials (BUT1)</li> 
+	  <li>Algorithms and Programming (Python) — Practical sessions (BUT1)</li> 
+	  <li>Instrumentation and Computer Science — Practical sessions (BUT1)</li> 
+	  <li>Multi-Sensor Measurements — Practical sessions (BUT3)</li> 
+	  <li>Internship and Apprenticeship Supervision</li>
+    </ul>
+  </section>
+
+  <!-- RESPONSABILITÉS (in French)-->
+  <section id="service">
+   
+<h2>Responsabilités académiques</h2>
+
+<h4>Responsable de l’équipe SICOIA, Laboratoire SATIE (Depuis 2026)</h4>
+<ul>
+  <li>Co-responsable avec Emanuel Aldea. 13 enseignant.es-chercheurs.es et X doctorant.e.s.</li>
+</ul>
+
+<h4>Responsable de la plateforme pédagogique d’instrumentation, IUT d’Orsay, Dpt Mesures Physiques (2024 - 2026)</h4>
+<ul>
+  <li>900h d’enseignements dont 700h de TP et plusieurs centaines d’heures de projets tutorés</li>
+  <li>16 intervenant.es et 1 technicien.</li>
+</ul>
+
+<h4>Cheffe de département, IUT d’Orsay, Département Mesures Physiques (2021 - 2024)</h4>
+<ul>
+  <li>Co-responsable avec F. Huguet
+  <li>Environ 60 personnel permanent (PRAG, EC, secrétaires pédagogiques, technicien.nes), 20-30 doctorant.es-enseignant.es, 70-100 vacataires - 400 étudiant.es.</li>
+</ul>
+
+<h4>Directrice des études (DUT 2`eme année), IUT d’Orsay, Département Mesures Physiques (2008-2021)</h4>
+<ul>
+  <li>Co-responsable C. Frappart.</li>
+  <li>Contexte : 150 étudiants en moyenne - 2 promotions : S3/S4 et S3 décalé/S4 décalé.</li>
+  <li>Rôle : Organisation de l’accueil des étudiants, suivi des notes, suivi des absences, organisation des jurys de validation de semestre, organisation parcours spécifiques à l’étranger, gestion des situations particulières, recrutement des nouveaux entrants en 1ère et 2ème année.</li>
+</ul>
+
+<h4>Directrice des études (DUT 1ere année), IUT d’Orsay, Département Mesures Physiques (2002 – 2003 )</h4>
+<ul>
+  <li>Co-responsable avec G. Vincents.</li>
+  <li>Contexte : 200 étudiants en moyenne - 2 promotions : S1/S2 et S1 décalé/S2 décalé.</li>
+  <li>Rôle : Organisation de l’accueil des étudiants, suivi des notes, suivi des absences, organisation des jurys de validation, gestion des situations particulières, recrutement des nouveaux entrants en 1ère année...</li>
+</ul>
+
+<h4>Responsable des modules projets tutorés, IUT d’Orsay, Département Mesures Physiques (2001 – 2010)</h4>
+<ul>
+  <li>Co-responsable avec C. Frappart.</li>
+  <li>Rôle : collecte des sujets, collecte et harmonisation des notes, organisation des jurys de soutenance, présentation du module aux étudiants.</li>
+</ul>
+
+<h2>Participation à des conseils / comités</h2>
+
+<h3>Au niveau national</h3>
+
+<h4>Membre nommé du Comité National du CNRS, Section 3 (2025-2026)</h4>
+<ul>
+  <li>Référente parité (avec Jérémy Cohen).</li>
+  <li>Participation à la session d’automne 2025 (Promotions, médailles, évaluations des chercheur.ses)</li>
+  <li>Participation à la session d’hiver (délégations)</li>
+  <li>Membre du jury du concours CR.</li>
+</ul>
+
+<h4>Membre élu du Conseil National des Universités (CNU) (2012-2019)</h4>
+<ul>
+  <li>Membre suppléant en 2012 puis titulaire depuis 2013.</li>
+  <li>Participation aux campagnes de qualification MCF, de promotion MCF-HC et de CRCT de 2012 à 2015 inclus.</li>
+  <li>Participation à la campagne PEDR en 2014 et de 2017 à 2019.</li>
+</ul>
+
+<h3>Au niveau de l'université</h3>
+
+<h4>Membre du comité du pôle A de l’école doctorale STIC, Univ. Paris-Saclay (depuis 2025) </h4>
+
+<h4>Membre élu du Conseil de l’Ecole Universitaire de Premier Cycle de Paris-Saclay (EUPCPS) (2021-2026)</h3>
+
+<h4>Membre du Conseil Académique, Univ. Paris-Saclay (2015-2017)</h3>
+
+<h4>Membre élu au Conseil Scientifique (CS), Univ.Paris-Sud (2009 – 2012)</h4>
+<ul>
+  <li>Participation au groupe de réflexion “Procédures et fonctionnement du CS”, membre de la commission de la pédagogie de l’université Paris-Sud, représentante des rangs B du CS au conseil du département de physique de la faculté d’Orsay (2011-2012).</li>
+  <li>Représentante du CS aux auditions des porteurs de projet BQR (Bonus Qualité Recherche) en math, informatique et sciences humaines et sociales.</li>
+</ul>
+
+<h4>Membre élu de la commission de spécialiste 61, Univ.Paris-Sud (2007 – 2010)</h4>
+<ul>
+  <li>Participation à 4 comités de sélection de MCF (Paris-Sud et Supélec) : MCF-520, MCF-845, MCF-2269, MCF-862</li>
+  <li>Participation aux classement des dossiers ATER, demandes de CRCT, professeurs invités...</li>
+</ul>
+
+
+
+
+<h3>Au niveau de la composante</h3>
+
+<h4>Membre élu du Conseil du Laboratoire SATIE (depuis 2026)</h4>
+
+<h4>Membre élu du Conseil de l'IUT d’Orsay (depuis 2025 et de 2003 à 2006)</h4>
+
+<h4>Membre du Conseil du Laboratoiredes Signaux et Systèmes (2020-2023 et 2011-2014)</h4>
+
+<h4>Membre du Bureau de direction de l’IUT d’Orsay (2021-2024)</h4>
+
+<h4> Membre du bureau du département Mesures Physiques de l'IUT d’Orsay (2008-2021)</h4>
+
+
+
+
+     
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 — Florence Alberge
+  </footer>
+
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
